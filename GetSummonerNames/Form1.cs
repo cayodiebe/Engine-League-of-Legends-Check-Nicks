@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Management;
 using System.Net;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
@@ -16,22 +17,25 @@ namespace GetSummonerNames
 {
     public partial class Form1 : Form
     {
+       
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
         private const string linkBrOp = "https://www.op.gg/summoners/br/";
         public static Dictionary<int, string> listaAliados { get; set; } = new Dictionary<int, string>();
         public static Dictionary<int, string> listaLinks { get; set; } = new Dictionary<int, string>();
         public static Dictionary<string, string> Riot { get; set; } = new Dictionary<string, string>();
         public static Dictionary<string, string> Client { get; set; } = new Dictionary<string, string>();
 
-        private string _regiao;
+        private string _regiao = "BR";
         private string _players;
         public const int WmNclbuttondown = 0xA1;
         public const int HtCaption = 0x2;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
-        
+
+
 
 
         [DllImport("user32.dll")]
@@ -93,6 +97,7 @@ namespace GetSummonerNames
             Client.Add("token", Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes("riot:" + Findstring(commandline, "--remoting-auth-token=", "\" \"--respawn-command=LeagueClient.exe"))));
         }
 
+        
         private static string MakeRequest(string type, string url, bool client)
         {
             try
@@ -106,7 +111,7 @@ namespace GetSummonerNames
                 int port;
                 string token;
 
-                if(client)
+                if (client)
                 {
                     port = Convert.ToInt32(Client["port"]);
                     token = Client["token"];
@@ -144,12 +149,12 @@ namespace GetSummonerNames
             var deserialized = JsonConvert.DeserializeObject<Aliados>(req);
             var count = 0;
 
-            foreach (var player in deserialized.Aliado)
+            foreach (var player in deserialized.Participants)
             {
                 count++;
-                listaAliados.Add(count, player.Nome);
-                listaLinks.Add(count, linkBrOp + "/" + player.Nome);
-                _players += player.Nome + ", ";
+                listaAliados.Add(count, player.Name);
+                listaLinks.Add(count, linkBrOp + "/" + player.Name);
+                _players += player.Name + ", ";
             }
             
             linkLabel1.Text = listaAliados[1];
@@ -162,10 +167,9 @@ namespace GetSummonerNames
         private void button1_Click(object sender, EventArgs e)
         {
             get_lcu();
-            _regiao = Getregion(MakeRequest("GET", "/riotclient/get_region_locale", true));
-            Getplayers(MakeRequest( "GET", "/chat/v5/participants/champ-select", false));
+            var test = MakeRequest("GET", "/chat/v5/participants/champ-select" /*Found Request in various Logs C:\Riot Games\League of Legends\Logs\LeagueClient*/, false);
+            Getplayers(test);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.op.gg/multisearch/br?summoners=" + _players);

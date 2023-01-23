@@ -12,3 +12,17 @@ C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSu
 C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.CopyComplete
 C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.exe
 C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.pdb
+C:\EngineLol\GetSummonerNames\bin\Debug\GetSummonerNames.exe.config
+C:\EngineLol\GetSummonerNames\bin\Debug\GetSummonerNames.exe
+C:\EngineLol\GetSummonerNames\bin\Debug\GetSummonerNames.pdb
+C:\EngineLol\GetSummonerNames\bin\Debug\Newtonsoft.Json.dll
+C:\EngineLol\GetSummonerNames\bin\Debug\Newtonsoft.Json.xml
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.AssemblyReference.cache
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.SuggestedBindingRedirects.cache
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.Form1.resources
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.Properties.Resources.resources
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.GenerateResource.cache
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.CoreCompileInputs.cache
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.CopyComplete
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.exe
+C:\EngineLol\GetSummonerNames\obj\Debug\GetSummonerNames.pdb

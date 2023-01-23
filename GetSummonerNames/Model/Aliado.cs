@@ -8,11 +8,11 @@ namespace GetSummonerNames.Model
 {
     public class Aliado
     {
-        public string Nome { get; set; }
+        public string Name { get; set; }
     }
 
     public class Aliados
     {
-        public List<Aliado> Aliado { get; set; }
+        public List<Aliado> Participants { get; set; }
     }
 }
