@@ -1,0 +1,14 @@
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\bin\Debug\GetSummonerNames.exe.config
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\bin\Debug\GetSummonerNames.exe
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\bin\Debug\GetSummonerNames.pdb
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\bin\Debug\Newtonsoft.Json.dll
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\bin\Debug\Newtonsoft.Json.xml
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.AssemblyReference.cache
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.SuggestedBindingRedirects.cache
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.Form1.resources
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.Properties.Resources.resources
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.GenerateResource.cache
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.CoreCompileInputs.cache
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.csproj.CopyComplete
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.exe
+C:\Baseult-Rev-League-of-Legends-Lobby-Revealer\GetSummonerNames\obj\Debug\GetSummonerNames.pdb
